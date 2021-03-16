@@ -28,7 +28,7 @@ const PlaneMesh: React.FC<Props> = ({ vertexShader, fragmentShader }) => {
 
   useFrame(() => {
     if (material.current) {
-      material.current.uniforms.uTime.value += 0.1;
+      material.current.uniforms.uTime.value += 0.005;
     }
   });
 
